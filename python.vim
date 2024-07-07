@@ -1,11 +1,12 @@
 " ======= python jedi =======
-" let g:pymode_rope = 0
 
 " . 触发自动补全
-let g:jedi#popup_on_dot = 0
+let g:jedi#popup_on_dot = 1
 
 " 函数参数显示模式 1 or 2
 let g:jedi#show_call_signatures = "2"
+
+let g:jedi#use_tabs_not_buffers = 1
 
 " 自动补全禁用
 " let g:jedi#completions_enabled = 0

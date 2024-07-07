@@ -1,5 +1,14 @@
 let ConfigPath = '~/.vim/'
 
+let PlugList = [
+    \ ['all', 'which_key.vim'],
+    \ ['all', 'airline.vim'],
+    \ ['all', 'vim_table_mode.vim'],
+    \ ['python', 'python.vim'],
+    \ ['rust', 'rust.vim'],
+    \ ['markdown', 'markdown.vim'],
+    \ ]
+
 set nocompatible       " 关闭兼容模式
 set termguicolors      " 设置真颜色
 let mapleader=" "      " 设置leader键,主键
@@ -68,26 +77,14 @@ Plug 'rust-lang/rust.vim',{'for': ['rust']}
 Plug 'davidhalter/jedi-vim',{'for': ['python']}
 call plug#end()
 
-" ======= 插件管理 =======
-let PlugList = [
-    \ 'which_key.vim',
-    \ 'airline.vim',
-    \ 'vim_table_mode.vim',
-    \ ]
+" ======= 插件设置 =======
 
-let FileTypePlug = {
-    \ 'python' : 'pyhon.vim',
-    \ 'rust' : 'rust.vim',
-    \ 'markdown' : 'markdown.vim'
-    \ }
-    
-
-for i in PlugList
-    execute 'source '.ConfigPath.i
-endfor
-
-for i in keys(FileTypePlug)
-    execute 'autocmd Filetype '.i.' source '.ConfigPath.FileTypePlug[i]
+for [filetype,plugpath] in PlugList
+    if filetype == 'all'
+        execute 'source '.ConfigPath.plugpath
+    else
+        execute 'autocmd Filetype '.filetype.' source '.ConfigPath.plugpath
+    endif
 endfor
 
 " ======= 按键映射 =======
