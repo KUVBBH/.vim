@@ -1,3 +1,5 @@
+let ConfigPath = '~/.vim/'
+
 set nocompatible       " 关闭兼容模式
 set termguicolors      " 设置真颜色
 let mapleader=" "      " 设置leader键,主键
@@ -68,12 +70,12 @@ call plug#end()
 
 " ======= 插件管理 =======
 
-source ~/.vim/which_key.vim
-source ~/.vim/vim_table_mode.vim
-source ~/.vim/airline.vim
-autocmd Filetype python source ~/.vim/python.vim
-autocmd Filetype rust source ~/.vim/rust.vim
-autocmd Filetype markdown source ~/.vim/markdown.vim
+execute 'source '.ConfigPath.'which_key.vim'
+execute 'source '.ConfigPath.'airline.vim'
+execute 'source '.ConfigPath.'vim_table_mode.vim'
+execute 'autocmd Filetype python source '.ConfigPath.'python.vim'
+execute 'autocmd Filetype rust source '.ConfigPath.'rust.vim'
+execute 'autocmd Filetype markdown source '.ConfigPath.'markdown.vim'
 
 " ======= 按键映射 =======
 
