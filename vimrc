@@ -69,13 +69,26 @@ Plug 'davidhalter/jedi-vim',{'for': ['python']}
 call plug#end()
 
 " ======= 插件管理 =======
+let PlugList = [
+    \ 'which_key.vim',
+    \ 'airline.vim',
+    \ 'vim_table_mode.vim',
+    \ ]
 
-execute 'source '.ConfigPath.'which_key.vim'
-execute 'source '.ConfigPath.'airline.vim'
-execute 'source '.ConfigPath.'vim_table_mode.vim'
-execute 'autocmd Filetype python source '.ConfigPath.'python.vim'
-execute 'autocmd Filetype rust source '.ConfigPath.'rust.vim'
-execute 'autocmd Filetype markdown source '.ConfigPath.'markdown.vim'
+let FileTypePlug = {
+    \ 'python' : 'pyhon.vim',
+    \ 'rust' : 'rust.vim',
+    \ 'markdown' : 'markdown.vim'
+    \ }
+    
+
+for i in PlugList
+    execute 'source '.ConfigPath.i
+endfor
+
+for i in keys(FileTypePlug)
+    execute 'autocmd Filetype '.i.' source '.ConfigPath.FileTypePlug[i]
+endfor
 
 " ======= 按键映射 =======
 
