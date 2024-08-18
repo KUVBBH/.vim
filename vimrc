@@ -1,6 +1,7 @@
 let ConfigPath = '~/.vim/'
 
 let PlugList = [
+    \ ['all', 'plug.vim'],
     \ ['all', 'which_key.vim'],
     \ ['all', 'airline.vim'],
     \ ['all', 'vim_table_mode.vim'],
@@ -47,9 +48,13 @@ let &t_EI.="\e[2 q" "EI = NORMAL mode (ELSE)
 
 " 配色
 " https://github.com/tomasr/molokai
-colorscheme codedark
+set background=dark
+colorscheme hybrid
+" colorscheme codedark
+" colorscheme molokai
 " let g:molokai_original = 1
 " let g:rehash256 = 1
+" vim-hybrid
 
 " ======= undofile文件修改历史记录 =======
 
@@ -66,16 +71,6 @@ endif
 
 " curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-call plug#begin()
-Plug 'vim-airline/vim-airline'
-Plug 'liuchengxu/vim-which-key'
-Plug 'yianwillis/vimcdoc'
-Plug 'scrooloose/nerdtree'
-Plug 'mbbill/undotree'
-Plug 'dhruvasagar/vim-table-mode',{'for': ['markdown']}
-Plug 'rust-lang/rust.vim',{'for': ['rust']}
-Plug 'davidhalter/jedi-vim',{'for': ['python']}
-call plug#end()
 
 " ======= 插件设置 =======
 
