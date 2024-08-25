@@ -8,6 +8,7 @@ let PlugList = [
     \ ['python', 'python.vim'],
     \ ['rust', 'rust.vim'],
     \ ['markdown', 'markdown.vim'],
+    \ ['c', 'clang.vim'],
     \ ]
 
 set nocompatible       " 关闭兼容模式
