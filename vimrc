@@ -4,11 +4,12 @@ let PlugList = [
     \ ['all', 'plug.vim'],
     \ ['all', 'which_key.vim'],
     \ ['all', 'airline.vim'],
-    \ ['all', 'vim_table_mode.vim'],
+    \ ['markdown', 'vim_table_mode.vim'],
     \ ['python', 'python.vim'],
     \ ['rust', 'rust.vim'],
     \ ['markdown', 'markdown.vim'],
     \ ['c', 'clang.vim'],
+    \ ['cpp', 'clang.vim'],
     \ ]
 
 set nocompatible       " 关闭兼容模式
