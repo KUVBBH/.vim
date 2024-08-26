@@ -61,9 +61,6 @@ colorscheme hybrid
 " ======= undofile文件修改历史记录 =======
 
 if has("persistent_undo")
-    if ConfigPath == '' 
-        let ConfigPath = fnamemodify(expand('$MYVIMRC'), ':h').'/'
-    endif
     let target_path = expand('~/.undodir')
     if !isdirectory(target_path)
         call mkdir(target_path, "p", 0700)
@@ -79,6 +76,9 @@ endif
 
 " ======= 插件设置 =======
 
+if ConfigPath == '' 
+    let ConfigPath = fnamemodify(expand('$MYVIMRC'), ':h').'/'
+endif
 for [filetype,plugpath] in PlugList
     if filetype == 'all'
         execute 'source '.ConfigPath.plugpath
