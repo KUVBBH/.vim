@@ -1,4 +1,4 @@
-let ConfigPath = '~/.vim/'
+let ConfigPath = ''
 
 let PlugList = [
     \ ['all', 'plug.vim'],
@@ -61,6 +61,9 @@ colorscheme hybrid
 " ======= undofile文件修改历史记录 =======
 
 if has("persistent_undo")
+    if ConfigPath == '' 
+        let ConfigPath = fnamemodify(expand('$MYVIMRC'), ':h').'/'
+    endif
     let target_path = expand('~/.undodir')
     if !isdirectory(target_path)
         call mkdir(target_path, "p", 0700)
