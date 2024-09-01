@@ -13,3 +13,5 @@ let g:clang_format_auto = 1
 " 代码风格
 let g:clang_format_style = 'LLVM'
 
+map <buffer> <LEADER>r :!clear && time clang % -o %< && %<<CR>
+
