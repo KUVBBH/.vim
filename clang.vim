@@ -13,11 +13,3 @@ let g:clang_format_auto = 1
 " 代码风格
 let g:clang_format_style = 'LLVM'
 
-" keymap
-inoremap <buffer> `> <Esc>/<++><CR>:nohlsearch<CR>c4l
-inoremap <buffer> `( ()<++><Esc>F(a
-inoremap <buffer> `< <><++><Esc>2F<a
-inoremap <buffer> `[ []<++><Esc>F[a
-inoremap <buffer> `{ {}<Esc>F{a
-inoremap <buffer> `' ''<++><Esc>F'i
-inoremap <buffer> `" ""<++><Esc>F"i

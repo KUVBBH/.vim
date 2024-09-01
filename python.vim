@@ -41,12 +41,6 @@ let g:jedi#rename_command = "<leader>i"
 " 保留且重命名当前光标下 Python 对象的所有位置
 let g:jedi#rename_command_keep_name = "<leader>I"
 
-inoremap <buffer> `> <Esc>/<++><CR>:nohlsearch<CR>c4l
-inoremap <buffer> `( ()<++><Esc>F(a
-inoremap <buffer> `[ []<++><Esc>F[a
-inoremap <buffer> `{ {}<++><Esc>F{a
-inoremap <buffer> `' ''<++><Esc>F'i
-inoremap <buffer> `" ""<++><Esc>F"i
 map <buffer> <LEADER>r :w<CR>:!clear && python %<CR>
 map <buffer> <LEADER>R :w<CR>:below terminal ++rows=10 python %<CR>
 map <buffer> <LEADER>b :w<CR>:!python -m black %<CR>

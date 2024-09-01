@@ -90,7 +90,7 @@ endfor
 " ======= 按键映射 =======
 
 " vimrc
-autocmd BufRead,BufNewFile vimrc inoremap <buffer> `= " =======  =======<Esc>6F=hi
+autocmd BufRead,BufNewFile vimrc inoremap <buffer> ,= " =======  =======<Esc>6F=hi
 
 " .gitcommit
 autocmd Filetype gitcommit map <LEADER>d ggdd:0r !date +"\%Y-\%m-\%d \%H:\%M:\%S"<CR>
