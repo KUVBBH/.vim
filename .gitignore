@@ -2,6 +2,6 @@
 !README.md
 !vimrc
 !colors/
-!colors/molokai.vim
 !.gitignore
 !*.vim
+!termux.properties
