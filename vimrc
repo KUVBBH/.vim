@@ -4,6 +4,7 @@ let PlugList = [
     \ ['all', 'plug.vim'],
     \ ['all', 'which_key.vim'],
     \ ['all', 'airline.vim'],
+    \ ['all', 'auto_pairs.vim'],
     \ ['markdown', 'vim_table_mode.vim'],
     \ ['python', 'python.vim'],
     \ ['rust', 'rust.vim'],
