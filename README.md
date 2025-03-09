@@ -25,8 +25,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 
 # git配置文件 https $ ssh
 
-cd ~/.vim && git clone https://github.com/KUVBBH/VIMRC.git
+cd ~/.vim && git clone https://github.com/KUVBBH/.vim.git
 
-cd ~/.vim && git clone git@github.com:KUVBBH/VIMRC.git
+cd ~/.vim && git clone git@github.com:KUVBBH/.vim.git
 
 ```
