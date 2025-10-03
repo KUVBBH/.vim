@@ -20,4 +20,4 @@
     inoremap <buffer> ,i <++>
     inoremap <buffer> ,a [](<++>)<++><Esc>F[a
     inoremap <buffer> ,m <span id="move"></span><++><Esc>F"i
-    map <buffer> <LEADER>r :InstantMarkdownPreview<CR>
+    map <buffer> <LEADER>r :MarkdownPreview<CR>
