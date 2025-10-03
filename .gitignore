@@ -1,7 +1,2 @@
-*
-!README.md
-!vimrc
-!colors/
-!.gitignore
-!*.vim
-!termux.properties
+plugged
+autoload
