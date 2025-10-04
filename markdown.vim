@@ -20,4 +20,10 @@
     inoremap <buffer> ,i <++>
     inoremap <buffer> ,a [](<++>)<++><Esc>F[a
     inoremap <buffer> ,m <span id="move"></span><++><Esc>F"i
-    map <buffer> <LEADER>r :MarkdownPreview<CR>
+
+
+    let g:mkdp_echo_preview_url = 1
+    let g:mkdp_markdown_css = expand('~/.vim/github-markdown.css')
+    let g:mkdp_highlight_css = expand('~/.vim/github-highlight.css')
+
+    map <buffer> <LEADER>r :MarkdownPreviewToggle<CR>

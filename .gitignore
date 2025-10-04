@@ -5,3 +5,4 @@
 !.gitignore
 !*.vim
 !termux.properties
+!*.css
