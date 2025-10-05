@@ -23,7 +23,7 @@
 
 
     let g:mkdp_echo_preview_url = 1
-    let g:mkdp_markdown_css = expand('~/.vim/github-markdown.css')
-    let g:mkdp_highlight_css = expand('~/.vim/github-highlight.css')
+    let g:mkdp_markdown_css = expand(ConfigPath.'github-markdown.css')
+    let g:mkdp_highlight_css = expand(ConfigPath.'github-highlight.css')
 
     map <buffer> <LEADER>r :MarkdownPreviewToggle<CR>
