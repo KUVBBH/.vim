@@ -5,6 +5,7 @@ Plug 'yianwillis/vimcdoc'
 Plug 'scrooloose/nerdtree'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode',{'for': ['markdown']}
+Plug 'mattn/emmet-vim',{'for': ['html','css']}
 Plug 'rust-lang/rust.vim',{'for': ['rust']}
 Plug 'davidhalter/jedi-vim',{'for': ['python']}
 Plug 'FittenTech/fittencode.vim',{'for': ['python','rust','c','cpp']}
